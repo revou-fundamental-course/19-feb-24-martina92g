@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars Beauty</title>
     <link rel="stylesheet" href="css\style.css">
-    
+    <script src="js\script.js"></script>
 </head>
 
 <body>
-    <script src="js\script.js"></script>
+ 
     <header>
         <img src="assets\logo.png" alt="logo" class="logo">
         <ul class="navigation">
             <li><a href="#" onclick="navigateTo('home')">Home</a></li>
             <li><a href="#" onclick="navigateTo('profile')">Our Profile</a></li>
-            <li><a href="#" onclick="navigateTo('message')">Message Us</a></li>
+            <li><a href="#" onclick="navigateTo('messageus')">Message Us</a></li>
         </ul>
     </header>
     
@@ -75,24 +75,30 @@
     </div>
 </section>
 
-<section id="message">
+<section id="messageus">
     <h1>Message Us</h1>
     <div class="inquiry-box">
         <form class="inquiry-form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
+
             <label for="birthday">Birthday</label>
             <input type="date" id="birthday" name="birthday" required>
-            <label for="gender">Jenis KelaminGender</label>
+            
+            <label for="gender">Gender</label>
             <select id="gender" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
+            
             <label for="message">Message</label>
-            <input type="text" id="message" name="message" required>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
             <button type="button" onclick="displayOutput()">Submit</button>
         </form>
-        <div id="outputBox">           
+        
+        <div class="outputBox">Output
+            <div id="outputBox" rows="5"></div>
         </div>
     </div>
 </section>

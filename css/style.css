@@ -2,6 +2,7 @@
 h1{
     text-align: center;
     color: darkred;
+    margin-top: 100px;
 }
 p{
     text-align: justify;
@@ -11,15 +12,13 @@ h2{
     text-align: left;
     color: brown;
 }
-.mission{
-    text-align: left;
-    color: brown;
-}
 body {
     background-image: url('../assets/background.png');
     background-size: cover;
     background-repeat: repeat-y;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 header {
     display: flex;
@@ -43,7 +42,7 @@ header {
     border-radius: 20px;
 }
 .home-img{
-    width: max-content;
+    width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 100px;
@@ -73,6 +72,10 @@ header {
     background-image: url('../assets/combination.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+.mission{
+    text-align: left;
+    color: brown;
 }
 .Highlight{
     display:flex;
@@ -107,14 +110,20 @@ header {
     display:flex;
     flex-direction:column;
 }
+
 #submit{
     margin-top: 20px;
 }
-#outputbox {
+#outputBox {
     width: 300px; 
     height: 200px;
+    box-sizing: border-box;
+    padding: 2px;
+    border: 0.3px solid black;
+    background-color: white;
 }
 footer{
     border-top: 1px solid black;
     text-align: end;
+    margin-top: 100px;
 }

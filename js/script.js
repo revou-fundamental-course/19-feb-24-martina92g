@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Update the content of the span element with the entered name
     if (newName !== null) {
-        document.getElementById("username").innerText = newName;
+        document.getElementById("username").innerHTML = newName;
     }
 });
 function navigateTo(sectionId) {
@@ -27,11 +27,12 @@ function displayOutput() {
         return false; // Prevent form submission
     }
     // Display output
-    const outputBox = document.getElementById('outputBox');
-    outputBox.innerHTML = `<p><strong>Name:</strong> ${name}</p>
-                           <p><strong>Birthday:</strong> ${birthday}</p>
-                           <p><strong>Gender:</strong> ${gender}</p>
-                           <p><strong>Message:</strong> ${message}</p>`;
+    var outputBox = document.getElementById('outputBox');
+    outputBox.innerHTML = 
+    `<p><strong>Name:</strong> ${name}</p>
+     <p><strong>Birthday:</strong> ${birthday}</p>
+     <p><strong>Gender:</strong> ${gender}</p>
+     <p><strong>Message:</strong> ${message}</p>`;
 }
 
 
