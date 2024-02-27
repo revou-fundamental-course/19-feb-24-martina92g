@@ -1,10 +1,13 @@
 // script.js
-function updateUsername() {
-    var username = prompt("What is your name?", "");
-    document.getElementById("username").innerHTML = username;
-}
-updateUsername();
+document.addEventListener("DOMContentLoaded", function() {
+    // Prompt the user for their name
+    var newName = prompt("Please enter your name:");
 
+    // Update the content of the span element with the entered name
+    if (newName !== null) {
+        document.getElementById("username").innerText = newName;
+    }
+});
 function navigateTo(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {

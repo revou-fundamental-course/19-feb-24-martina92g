@@ -16,7 +16,7 @@ h2{
     color: brown;
 }
 body {
-    background-image: url('assets/background.png'); /* Replace 'your-image-url.jpg' with the path or URL to your image */
+    background-image: url('../assets/background.png');
     background-size: cover;
     background-repeat: repeat-y;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -55,22 +55,22 @@ header {
     text-align: center;
 }
 #brightening{
-    background-image: url('assets/brightening.png');
+    background-image: url('../assets/brightening.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 #moisturizing{
-    background-image: url('assets/moisturizing.png');
+    background-image: url('../assets/moisturizing.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 #acne{
-    background-image: url('assets/acne.png');
+    background-image: url('../assets/acne.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 #combination{
-    background-image: url('assets/combination.png');
+    background-image: url('../assets/combination.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -85,17 +85,17 @@ header {
     border:2px solid paleturquoise;
 }
 #best-seller{
-    background-image: url('assets/best\ seller.png');
+    background-image: url('../assets/best\ seller.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 #ingredients{
-    background-image: url('assets/main\ ingredients.png');
+    background-image: url('../assets/main\ ingredients.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 #skincare-regime{
-    background-image: url('assets/skincare\ regime.png');
+    background-image: url('../assets/skincare\ regime.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
