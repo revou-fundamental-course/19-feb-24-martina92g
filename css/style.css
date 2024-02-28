@@ -2,7 +2,7 @@
 h1{
     text-align: center;
     color: darkred;
-    margin-top: 100px;
+    margin-top: 15%;
 }
 p{
     text-align: justify;
@@ -17,8 +17,8 @@ body {
     background-size: cover;
     background-repeat: repeat-y;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 header {
     display: flex;
@@ -26,6 +26,7 @@ header {
     align-items: center;
     background-color: rgb(209, 187, 218);
 }
+
 .logo{
     width: 80px;
     height: 80px;
@@ -34,24 +35,61 @@ header {
 .navigation {
     list-style-type: none;
 }
+
 .navigation li{
     display: inline-table;
-    margin-right: 20px;
     background-color: antiquewhite;
     border: 20px solid antiquewhite;
     border-radius: 20px;
 }
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        
+        background-color: rgb(209, 187, 218);
+        border-radius: 0%;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .navigation {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0; /* Reset margin to zero */
+        padding: 0;
+    }
+
+    .navigation li {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin:0;
+        border-radius: 0;
+    }
+}
+
+
 .home-img{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 .regime{
     display:flex;
     justify-content: space-around;
     text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .regime{
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
 }
 #brightening{
     background-image: url('../assets/brightening.png');
@@ -81,6 +119,14 @@ header {
     display:flex;
     justify-content:space-evenly;
 }
+@media screen and (max-width: 600px) {
+    .Highlight{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .circle-image{
     width: 100px;
     height: 100px;
@@ -110,22 +156,28 @@ header {
     display:flex;
     flex-direction:column;
 }
-
 #submit{
     margin-top: 20px;
 }
 #outputBox {
-    width: 300px; 
+    width: 400px; 
     height: 200px;
     box-sizing: border-box;
     padding: 2px;
     border: 0.3px solid black;
     background-color: white;
 }
+@media screen and (max-width: 600px) {
+    .inquiry-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #outputBox{
+        width: 100%;
+    }
+    }
 footer{
     border-top: 1px solid black;
     text-align: end;
     margin-top: 100px;
-    background-color: antiquewhite;
-    margin-bottom: 50px;
 }
